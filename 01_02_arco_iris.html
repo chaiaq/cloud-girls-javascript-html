@@ -1,0 +1,43 @@
+<canvas width="500" height="500"></canvas>
+
+<script>
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.strokeStyle = 'red';
+    pincel.beginPath();
+    pincel.arc(200, 150, 100, 0, 1*Math.PI, true);
+    pincel.lineWidth = 10;
+    pincel.stroke();
+
+    pincel.strokeStyle = 'orange';
+    pincel.beginPath();
+    pincel.arc(200, 150, 90, 0, 1*Math.PI, true);
+    pincel.lineWidth = 10;
+    pincel.stroke();
+
+    pincel.strokeStyle = 'yellow';
+    pincel.beginPath();
+    pincel.arc(200, 150, 80, 0, 1*Math.PI, true);
+    pincel.lineWidth = 10;
+    pincel.stroke();
+
+    pincel.strokeStyle = 'green';
+    pincel.beginPath();
+    pincel.arc(200, 150, 70, 0, 1*Math.PI, true);
+    pincel.lineWidth = 10;
+    pincel.stroke();
+
+    pincel.strokeStyle = 'blue';
+    pincel.beginPath();
+    pincel.arc(200, 150, 60, 0, 1*Math.PI, true);
+    pincel.lineWidth = 10;
+    pincel.stroke();
+
+    pincel.strokeStyle = 'purple';
+    pincel.beginPath();
+    pincel.arc(200, 150, 50, 0, 1*Math.PI, true);
+    pincel.lineWidth = 10;
+    pincel.stroke();
+    
+</script>

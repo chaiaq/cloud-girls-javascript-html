@@ -1,0 +1,46 @@
+<!--início - área para desenhar-->
+<canvas width="600" height="400"></canvas>
+<!-- fim - área para desenhar-->
+
+
+<script>
+    var tela = document.querySelector('canvas');
+    // no javascript tanto faz usar aspas duplas ou simples
+    var pincel = tela.getContext('2d');
+    // criar o objeto através do context, definindo que é um objeto 2d
+
+    pincel.fillStyle = 'lightgray';
+    // define a cor do pincel (antes de pintar)
+
+    pincel.fillRect(0, 0, 600, 400);
+    // chama o pincel
+    // manda ele preencher (fill) um retangulo (rect)
+    // posiciona ele no plano cartesiano 
+    // (posição x (horizontal), posição y (vertical), largura, altura)
+
+    pincel.fillStyle = 'green';
+    pincel.fillRect(0, 0, 200, 400);
+
+    pincel.fillStyle = 'red';
+    pincel.fillRect(400, 0, 200, 400);
+
+    pincel.fillStyle = 'yellow';
+    pincel.beginPath();
+    // fazer formas não definidas através do path
+    // inicia o caminho
+    pincel.moveTo(300, 200);
+    // move-se até este ponto definido pelas coordenadas (sem desenhar)
+    pincel.lineTo(200, 400);
+    // desenha uma linha do primeiro ao segundo ponto
+    pincel.lineTo(400, 400);
+    // desenha uma linha do segundo ao terceiro ponto
+    pincel.fill();
+    // preenche o desenho
+
+    pincel.fillStyle = 'blue';
+    pincel.beginPath();
+    pincel.arc(300, 200, 50, 0, 2*3.14);
+    pincel.fill();
+
+
+</script>
