@@ -5,19 +5,18 @@
     var tela = document.querySelector("canvas");
     var pincel = tela.getContext('2d');
 
-    function desenhaTriangulo(x, y) {
+    function desenhaTriangulo(xa, ya, xc, yc, cor) {
+        pincel.fillStyle = cor;
         pincel.beginPath();
-        pincel.moveTo(x,x);
-        pincel.lineTo(x,y);
-        pincel.lineTo(y,y);
+        pincel.moveTo(xa,ya);
+        pincel.lineTo(xa,yc);
+        pincel.lineTo(xc,yc);
         pincel.fill();
-
-        pincel.fillStyle = 'white';
-
 
     }
 
 
-    desenhaTriangulo(50,400);
+    desenhaTriangulo(50,50,400,400, 'black');
+    desenhaTriangulo(100,175,275,350, 'white');
 
 </script>

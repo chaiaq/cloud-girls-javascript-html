@@ -34,6 +34,26 @@
         }
     }
 
+    function desenhaQuadrado (cores, navegador) {
+
+        var x = 0;
+        var y = 200;
+
+        for (var posicao = 0; posicao < cores.length; posicao++) {
+                pincel.fillStyle = cores[posicao];
+
+                pincel.fillRect(x, y, 20, 20);
+                pincel.strokeStyle = 'black';
+                pincel.strokeRect(x, y, 20, 20);
+                y = y + 25;
+                
+                pincel.font = '15px Georgia';
+                pincel.fillStyle = 'black';
+                pincel.fillText(navegador[posicao], x+30, y-10);
+        }
+
+    }
+
     var tela = document.querySelector('canvas');
     var pincel = tela.getContext('2d');
 
@@ -43,6 +63,9 @@
 
     desenhaBarra(50, 50, serie2015, cores, '2015');
     desenhaBarra(150, 50, serie2016, cores, '2016');
+
+    var navegador = ['Chrome', 'Firefox', 'Safari', 'Outros (Opera, IE, Edge, etc)']
+    desenhaQuadrado(cores, navegador);
 
 
 </script>
