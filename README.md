@@ -1,4 +1,4 @@
-<h1>Mentoria Cloud Girls #1</h1>
+<h1>Mentoria Cloud Girls #2</h1>
 
 <p>Repositório para arquivos do curso da Alura:</p>
 <strong>* JavaScript e HTML: pratique lógica com desenhos, animações e um jogo.</strong>
